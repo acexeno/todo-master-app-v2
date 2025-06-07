@@ -1,0 +1,204 @@
+2025-06-06 22:32:10,126 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\api\views.py changed, reloading.
+2025-06-06 22:35:09,706 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo_project\settings.py changed, reloading.
+2025-06-06 22:35:13,509 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo_project\settings.py changed, reloading.
+2025-06-06 22:45:36,126 ERROR:Error creating todo:
+Traceback (most recent call last):
+  File "C:\Users\Kenniell\OneDrive\Desktop\tp velarde\api\views.py", line 119, in post
+    doc_ref = todos_ref.add(todo_data)[1]
+              ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\cloud\firestore_v1\collection.py", line 132, in add
+    write_result = document_ref.create(document_data, **kwargs)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\cloud\firestore_v1\document.py", line 99, in create
+    write_results = batch.commit(**kwargs)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\cloud\firestore_v1\batch.py", line 61, in commit
+    commit_response = self._client._firestore_api.commit(
+        request=request,
+        metadata=self._client._rpc_metadata,
+        **kwargs,
+    )
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\cloud\firestore_v1\services\firestore\client.py", line 1431, in commit
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.PermissionDenied: 403 Cloud Firestore API has not been used in project todo-manager-27c7d before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=todo-manager-27c7d then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "SERVICE_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "firestore.googleapis.com"
+}
+metadata {
+  key: "serviceTitle"
+  value: "Cloud Firestore API"
+}
+metadata {
+  key: "containerInfo"
+  value: "todo-manager-27c7d"
+}
+metadata {
+  key: "consumer"
+  value: "projects/todo-manager-27c7d"
+}
+metadata {
+  key: "activationUrl"
+  value: "https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=todo-manager-27c7d"
+}
+, locale: "en-US"
+message: "Cloud Firestore API has not been used in project todo-manager-27c7d before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=todo-manager-27c7d then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console API activation"
+  url: "https://console.developers.google.com/apis/api/firestore.googleapis.com/overview?project=todo-manager-27c7d"
+}
+]
+2025-06-06 22:45:36,288 ERROR:Internal Server Error: /api/todos/
+2025-06-06 22:48:15,600 WARNING:Not Found: /favicon.ico
+2025-06-06 22:49:04,661 WARNING:Not Found: /favicon.ico
+2025-06-06 22:51:21,166 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\api\views.py changed, reloading.
+2025-06-06 22:51:29,736 ERROR:Internal Server Error: /api/todos/
+2025-06-06 22:51:37,843 ERROR:Internal Server Error: /api/todos/
+2025-06-06 22:52:40,017 ERROR:Internal Server Error: /api/todos/
+2025-06-06 22:57:06,518 ERROR:Internal Server Error: /api/todos/
+2025-06-06 23:25:23,310 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo_project\urls.py changed, reloading.
+2025-06-06 23:25:42,719 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo\forms.py changed, reloading.
+2025-06-06 23:26:16,337 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo\views.py changed, reloading.
+2025-06-06 23:27:48,679 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo\urls.py changed, reloading.
+2025-06-06 23:28:07,417 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo_project\settings.py changed, reloading.
+2025-06-06 23:31:40,857 ERROR:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo\views.py", line 26, in todo_list
+    return render(request, 'todo/todo_list.html', context)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'register' not found. 'register' is not a valid view function or pattern name.
+2025-06-06 23:31:41,150 WARNING:Not Found: /favicon.ico
+2025-06-06 23:31:45,694 ERROR:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo\views.py", line 26, in todo_list
+    return render(request, 'todo/todo_list.html', context)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Kenniell\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'register' not found. 'register' is not a valid view function or pattern name.
+2025-06-06 23:44:49,498 INFO:C:\Users\Kenniell\OneDrive\Desktop\tp velarde\todo_project\settings.py changed, reloading.
+2025-06-07 08:36:22,393 WARNING:Not Found: /favicon.ico
+2025-06-07 08:46:14,189 WARNING:Not Found: /favicon.ico
